@@ -3,8 +3,6 @@ Lookshare-GUI
 
 Requirements:
 
-<---------->
-
 Qt SDK
 
 cmyth - http://cmyth.github.com
