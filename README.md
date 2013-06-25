@@ -31,8 +31,11 @@ export PATH
 . /etc/profile
 
 */ Install cmyth /*
+
 1- Clone cmyth repository from http://cmyth.github.com
+
 2- Build and install the code with the following command:
+
 PREFIX=<path> scons install
 
 */ Install GStreamer /*
@@ -71,7 +74,11 @@ sudo make
 sudo make install
 
 */ Build the Lookshare-GUI /* 
+
 1- sudo qmake
+
 2- sudo make
+
 3- sudo make install
+
 4- ./Lookshare-GUI
