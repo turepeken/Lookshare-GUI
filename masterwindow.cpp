@@ -10,6 +10,7 @@ MasterWindow::MasterWindow(QWidget *parent)
     start = new QWidget;
     home = new HomeScreen;
     storage = new Storage;
+    internet= new Internet;
     home->masterWindow = this;
 
     stackLayout = new QStackedLayout;
@@ -17,6 +18,7 @@ MasterWindow::MasterWindow(QWidget *parent)
     stackLayout->addWidget(home); // 1
 
     stackLayout->addWidget(storage); //2
+    stackLayout->addWidget(internet);  //3
 
     frame = new QFrame;
     frame->setFrameShape(QFrame::HLine);
