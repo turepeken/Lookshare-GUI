@@ -17,6 +17,7 @@ public:
 
 public slots:
     void storageClicked();
+    void linkClicked();
 
 private:
     QPushButton *linkButton;
