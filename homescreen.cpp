@@ -6,7 +6,7 @@ HomeScreen::HomeScreen(QWidget *parent)
     : QWidget(parent)
 {
     linkButton = new QPushButton;
-    linkButton->setText("Link");
+    linkButton->setText("Firefox");
 
     storageButton = new QPushButton;
     storageButton->setText("Storage");
@@ -19,6 +19,9 @@ HomeScreen::HomeScreen(QWidget *parent)
 
     connect(storageButton, SIGNAL(clicked()),
                 this, SLOT(storageClicked()));
+    connect(linkButton, SIGNAL(clicked()),
+                this, SLOT(linkClicked()));
+
 
 }
 
@@ -32,3 +35,8 @@ void HomeScreen::storageClicked()
     masterWindow->stackLayout->setCurrentIndex(2);
 }
 
+void HomeScreen::linkClicked()
+{
+    masterWindow->internet->update();
+    masterWindow->stackLayout->setCurrentIndex(3);
+}
