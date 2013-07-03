@@ -10,6 +10,7 @@
 
 #include "homescreen.h"
 #include "storage.h"
+#include "internet.h"
 
 class MasterWindow : public QWidget
 {
@@ -34,6 +35,7 @@ private:
 public:
     QWidget *start;
     Storage *storage;
+    Internet *internet;
     QStackedLayout *stackLayout;
 };
 
