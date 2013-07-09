@@ -13,8 +13,7 @@ HEADERS += \
     homescreen.h \
     filesystem.h \
     storage.h \
-    mythdatabase.h \
-    basesrc.h
+    mythdatabase.h 
 QT += sql
 QT += core gui
 QT += widgets
